@@ -104,3 +104,10 @@ Resources:
         - Key: Name
           Value: 'Cyrus-PublicInstance'
 
+Outputs:
+  PublicInstanceIP:
+    Description: Public IP of the Public Instance
+    Value:
+      Fn::GetAtt:
+        - PublicInstance
+        - PublicIp
